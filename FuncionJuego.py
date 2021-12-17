@@ -1,4 +1,3 @@
-import  random
 class Pos:
     tableroValor = [['1', '2', '3'],
                     ['4', '5', '6'],
@@ -58,6 +57,7 @@ class Jugadores:
         else:
             return self.j1
 
+
 class Juego:
     def __init__(self, jugadores):
         self.jugadores = jugadores
@@ -111,14 +111,6 @@ class Juego:
                     espacio = True
         return espacio
 
-    def getJugadorOpuesto(self, jugador1):
-        res = None
-        if jugador1.ficha == self.p1.ficha:
-            res = self.p2
-        elif jugador1.ficha == self.p2.ficha:
-            res = self.p1
-        return res
-
     def marcarJugada(self, pos):
         if self.tablero[pos.x][pos.y] == '-':
             self.tablero[pos.x][pos.y] = self.jugadores.getJugadorTurno().ficha
@@ -136,5 +128,3 @@ class Juego:
             return True
         else:
             return False
-
-
