@@ -153,27 +153,3 @@ class Generador:
             return posLibre
         return None
 
-
-'''
-listaTotalJugada = []
-var = Generador([['', '', ''],
-                    ['', '', ''],
-                    ['', '', '']],1,listaTotalJugada)
-
-a = []
-vitoriasSegunCasilla = []
-for i in range(9):
-    aux = []
-    vitoriasSegunCasilla.append(aux)
-
-var.generarJugandas(a)
-for i in range(len(listaTotalJugada)):
-    aux = listaTotalJugada[i]
-    #if (aux[1])[0] == "5" and (aux[1])[1] == "8" and (aux[1])[2] == "2" and (aux[1])[3] == "6"   and (aux[1])[4] == "1" and (aux[3] == "player2"):
-    if  (aux[3] == "player1"):
-        vitoriasSegunCasilla[int((aux[1])[0])-1].append(aux);
-
-for i in  range(len(vitoriasSegunCasilla)):
-    print("Lista jugadas para cailla " + str(i+1) + " Cantidad: " + str(len(vitoriasSegunCasilla[i])))
-    l = vitoriasSegunCasilla[i]
-'''

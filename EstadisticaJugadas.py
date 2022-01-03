@@ -58,13 +58,13 @@ def getJugada(iniciaIA,estadoTablero,listaGrande):
                     break
             unico = aux;
     print("******************************************************************************************************************")
-    print("--------------Lista de juagadas con Vitoria")
+    print("-------------- Lista de juagadas con Vitoria")
     for i in range(len(listaVictoriasPorCasilla)):
         print("Casilla: " + str(i+1)+"    Cantidad: "+str(len(listaVictoriasPorCasilla[i])))
-    print("--------------Lista de juagadas con Empate")
+    print("-------------- Lista de juagadas con Empate")
     for i in range(len(listaEmpatesPorCasilla)):
         print("Casilla: " + str(i+1)+"    Cantidad: "+str(len(listaEmpatesPorCasilla[i])))
-    print("--------------Valor elegido: " + str(valor))
+    print("-------------- Casilla Elegida: " + str(valor))
     print("******************************************************************************************************************")
 
     if valor == 1:
@@ -103,16 +103,3 @@ def  casillaConMasVictoriasOEmpates(lista):
         casillaElegida = lisRepetidos[random.randint(0,len(lisRepetidos)-1)]
     return casillaElegida+1
 
-'''
-
-listaTotalJugadas = []
-var = Generador([['', '', ''],
-                    ['', '', ''],
-                    ['', '', '']],1,listaTotalJugadas)
-var.generarJugandas([])
-
-print(getJugada(1,['5','2','4'],listaTotalJugadas))
-
-#lista = jm.getHistorial(500);
-#getJugada(1,['7', '8','9'],lista)
-'''

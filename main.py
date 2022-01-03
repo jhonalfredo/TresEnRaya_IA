@@ -140,7 +140,7 @@ for i in range(3):
         b1 = Button(frameCuadros, text=" ", font=fontStyle, image=pixelVirtual, width=100, height=100,bg="#23282d",compound="c",
                     borderwidth=3)
         b1.config(command=lambda fila=i, colum=j: metodoBoton(fila, colum),relief="solid")
-        b1.place(x=i*100, y=j*100)
+        b1.place(x=j*100, y=i*100)
         listaBotones[i][j] = b1
 # ------------------------------------------------------
 # -------- creacion de botones  REINICIAR -------------
